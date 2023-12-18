@@ -1,102 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <title>Your Website</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="script.js"></script>
+</head>
 
-  <body>
-    <nav>
-      <div class="logo">
-        <a href="./index.html">
-          <img src="../images/logo.jpg" alt="My Logo" />
-        </a>
-      </div>
-      <a href="index.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Services.html">Services</a>
-      <a href="Contact.html">Contact</a>
-    </nav>
-    <br />
+<body>
+    <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img src="images/logo.jpg" alt="My Logo">
+          </a>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarLinks">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarLinks" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="index.html">Home</a>
+            <a class="navbar-item" href="About.html">About</a>
+            <a class="navbar-item" href="Projects.html">Projects</a>
+            <a class="navbar-item" href="Services.html">Services</a>
+            <a class="navbar-item" href="Contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
 
-    <main id="about">
-      <h1>About Me</h1>
-      <div id="AboutParagraph">
-        <div>
-          <p>
-            Hi there! I'm Samrawit, a software engineering student currently
-            immersed in the fascinating world of coding and problem-solving. As
-            I delve deeper into this ever-evolving field, I'm captivated by the
-            endless possibilities it holds for creating innovative solutions
-            that shape our digital landscape.
-          </p>
-          <ul>
-            <li>logo designing</li>
-            <li>illustration</li>
-            <li>Website designing</li>
-            <li>app development</li>
-            <li>bot development</li>
-            <li>algorithm writing</li>
-          </ul>
+    
+<main class="about">
+  <section class="section aboutme">
+    <div class="container">
+        <div class="columns is-vcentered">
+            
+            <div class="column">
+                <h1 class="about__title">About Me</h1>
+                <div class="about__content">
+                    <div class="about__paragraph">
+                        <p class="has-text-centered">
+                            Hi there! I'm Samrawit, a software engineering student currently
+                            immersed in the fascinating world of coding and problem-solving. As
+                            I delve deeper into this ever-evolving field, I'm captivated by the
+                            endless possibilities it holds for creating innovative solutions
+                            that shape our digital landscape.
+                        </p>
+                    </div>
+                    <ul class="about__list has-text-centered">
+                        <li>Logo designing</li>
+                        <li>Illustration</li>
+                        <li>Website designing</li>
+                        <li>App and bot development</li>
+                        <li>Algorithm writing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column is-half-desktop">
+              <div class="about__image has-text-centered">
+                  <img src="images/AvatarMaker.png" alt="Description of the image" />
+              </div>
+          </div>
         </div>
-        <div id="AboutImg">
-          <img src="../images/avatarmaker.png" alt="Description of the image" />
+    </div>
+</section> 
+<main>
+    <h1 class="about__certificates-title">Certificates</h1>
+    <div class="columns is-mobile card-container is-multiline">
+      <div class="column is-full">
+          <div class="about__card">
+            <div class="column has-text-centered">
+              <img src="images/certimage1.jpg" alt="Image" class="card__image" />
+              <h2 class="card__title">Red hat Administration</h2>
+              <p class="card__description">
+                  Certificate of recognition from Red hat on system administration.
+              </p>
+              <a href="images/cert1.jpg" class="card__link">See certificate</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <h2>Certificates</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="../images/certimage1.jpg" alt="Image" class="card-image" />
-          <h2>Red hat Administration</h2>
-          <p>
-            certificate of recognition from Red hat on sytem admintstration.
-          </p>
-          <a href="../images/cert1.jpg"> see certificate </a>
+        <div class="column is-full  is-centered pl-6">
+          <div class="about__card ">
+            <div class="column has-text-centered">
+              <img src="images/certimage2.jpg" alt="Image" class="card__image" />
+              <h2 class="card__title">Networking</h2>
+              <p class="card__description">
+                  Certificate of recognition from Cisco academy on networking essentials.
+              </p>
+              <a href="images/cert2.jpg" class="card__link">See certificate</a>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <img src="../images/certimage2.jpg" alt="Image" class="card-image" />
-          <h2>Networking</h2>
-          <p>
-            Certificate of recognition from cisco academy on networking
-            essential.
-          </p>
-          <a href="../images/cert2.jpg"> see certificate </a>
+        <div class="column is-full is-centered">
+          <div class="about__card ">
+            <div class="column has-text-centered">
+              <img src="images/certimage3.png" alt="Image" class="card__image" />
+              <h2 class="card__title">Time management</h2>
+              <p class="card__description">
+                  Certificate of recognition from Udemy on mastering time management.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <img src="../images/certimage3.png" alt="Image" class="card-image" />
-          <h2>Time managment</h2>
-          <p>
-            Certificate of recognition from udemy on mastering time managment.
-          </p>
-        </div>
-      </div>
+    </div>
 
-      <div class="navigation">
-        <button onclick="prevCard()">Previous</button>
-        <button onclick="nextCard()">Next</button>
-      </div>
-    </main>
-    <hr />
-    <footer>
-      <div class="social-icons">
-        <a href="https://www.github.com/samrwitt" target="_blank"
-          ><img src="../images/github.jpg" alt="GitHub"
-        /></a>
-        <a href="https://t.me/Fumble_wit" target="_blank"
-          ><img src="../images/telegram.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://et.linkedin.com/in/samrawit-tesfay-20a404283"
-          target="_blank"
-          ><img src="../images/linkedin.png" alt="linkedin"
-        /></a>
-        <a href="mailto:samrawitkta@gmail.com" target="_blank"
-          ><img src="../images/Gmail_icon.png" alt="gmail"
-        /></a>
-      </div>
-      <p>Made by Samrwit.K</p>
-      <p>&copy; 2023 Your Website. All rights reserved.</p>
-    </footer>
-  </body>
+    <div class="controls has-text-centered">
+        <button class="button is-link prev-button">Previous</button>
+        <button class="button is-link next-button">Next</button>
+    </div>
+</main>
+
+        
+
+  <footer class="footer" >
+    <div class="content has-text-centered">
+        <div class="footer-content container">
+            <div class="columns is-centered">
+
+                
+                <div class="is-half-tablet is-one-third-desktop has-text-left">
+                  <div class="column is-full-mobile has-text-centered">
+                    <div class="footer__social-icons is-flex is-justify-content-center ">
+                        
+                        <a href="https://www.github.com/samrwitt" target="_blank">
+                            <img src="images/github.jpg" alt="GitHub" class="image is-24x24" />
+                        </a>
+                        <a href="https://t.me/Fumble_wit" target="_blank">
+                            <img src="images/telegram.png" alt="Telegram" class="image is-24x24" />
+                        </a>
+                        <a href="https://et.linkedin.com/in/samrawit-tesfay-20a404283" target="_blank">
+                            <img src="images/linkedin.png" alt="LinkedIn" class="image is-24x24" />
+                        </a>
+                        <a href="mailto:samrawitkta@gmail.com" target="_blank">
+                            <img src="images/Gmail_icon.png" alt="Gmail" class="image is-24x24" />
+                        </a>
+                    </div>
+                    </div>
+                                     </div>
+
+                <div class=" is-half-tablet is-one-third-desktop has-text-centered">
+                  <div class="column is-full-mobile has-text-centered">
+                    <p class="footer-content__copyright">&copy; 2023 Your Website. All rights reserved.</p>
+                </div>
+              </div>
+
+                <div class=" is-half-tablet is-one-third-desktop has-text-right">
+                  <div class="column is-full-mobile has-text-centered">
+                     <p class="footer-content__made-by">Made by Samrwit.K</p>
+                </div>
+                </div>
+              
+
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
 </html>

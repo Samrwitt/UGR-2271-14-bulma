@@ -1,88 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <a href="./index.html">
-          <img src="../images/logo.jpg" alt="My Logo" />
-        </a>
-      </div>
-      <a href="index.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Services.html">Services</a>
-      <a href="Contact.html">Contact</a>
-    </nav>
-    <br />
-    <main id="Services">
-      <h1>Projects</h1>
-      <p>
-        These are few of the projects I have worked on in the past few years as
-        desinger and programmer. Take a look for yourself and see what kinda
-        work you should expect if you decide to work with me. <br />
-        Enjoy!
-      </p>
-      <div class="carousel">
-        <div class="slide">
-          <img src="../images/project1.jpg" alt="Image 1" />
-          <div class="slide-content">
-            <h3>Cloned instagram</h3>
-            <p>
-              This is a project where i cloned instagram using react and node.js
-            </p>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="../images/project2.jpg" alt="Image 1" />
-          <div class="slide-content">
-            <h3>Logo competition</h3>
-            <p>
-              This is a project I competed in a logo set competition in Art
-              challenge.
-            </p>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="../images/project3.png" alt="Image 1" />
-          <div class="slide-content">
-            <h3>Space invader game</h3>
-            <p>
-              This is a game I built using Java and Kotlin. You can find this in
-              play store.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="controls">
-        <button onclick="prevImage()">Previous</button>
-        <button onclick="nextImage()">Next</button>
-      </div>
-    </main>
-    <hr />
-    <footer>
-      <div class="social-icons">
-        <a href="https://www.github.com/samrwitt" target="_blank"
-          ><img src="../images/github.jpg" alt="GitHub"
-        /></a>
-        <a href="https://t.me/Fumble_wit" target="_blank"
-          ><img src="../images/telegram.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://et.linkedin.com/in/samrawit-tesfay-20a404283"
-          target="_blank"
-          ><img src="../images/linkedin.png" alt="linkedin"
-        /></a>
-        <a href="mailto:samrawitkta@gmail.com" target="_blank"
-          ><img src="../images/Gmail_icon.png" alt="gmail"
-        /></a>
-      </div>
-      <p>Made by Samrwit.K</p>
-      <p>&copy; 2023 Your Website. All rights reserved.</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img src="images/logo.jpg" alt="My Logo">
+          </a>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarLinks">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarLinks" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="index.html">Home</a>
+            <a class="navbar-item" href="About.html">About</a>
+            <a class="navbar-item" href="Projects.html">Projects</a>
+            <a class="navbar-item" href="Services.html">Services</a>
+            <a class="navbar-item" href="Contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <main class="projects has-text-centered">
+        <h1 class="projects__title">Projects</h1>
+        <p class="projects__description">
+          These are a few of the projects I have worked on in the past few years as
+          a designer and programmer. Take a look for yourself and see what kind of
+          work you should expect if you decide to work with me. <br />
+          Enjoy!
+        </p>
+        <div class="container columns has-text-centered is-centered mt-3 " >
+          <div class="carousel is-flex is-vcentered">
+            <div class="carousel__slide ">
+              <figure class="column image is-5by4">
+                <img src="images/project1.jpg" alt="Image 1" />
+              </figure>
+              <h3 class="carousel__slide-title">Cloned Instagram</h3>
+              <p class="carousel__slide-description">
+                This is a project where I cloned Instagram using React and Node.js.
+              </p>
+            </div>
+            <div class="carousel__slide">
+              <figure class="column image is-5by4">
+                <img src="images/project2.jpg" alt="Image 2" />
+              </figure>
+              <h3 class="carousel__slide-title">Logo competition</h3>
+              <p class="carousel__slide-description">
+                This is a project I competed in a logo set competition in Art challenge.
+              </p>
+            </div>
+            <div class="carousel__slide">
+              <figure class="image is-5by4">
+                <img src="images/project3.png" alt="Image 3" />
+              </figure>
+              <h3 class="carousel__slide-title">Space invader game</h3>
+              <p class="carousel__slide-description">
+                This is a game I built using Java and Kotlin. You can find this in the play store.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="controls has-text-centered">
+          <button class="button is-link prev-button">Previous</button>
+          <button class="button is-link next-button">Next</button>
+        </div>
+      </main>
+      
+      <footer class="footer" >
+        <div class="content has-text-centered">
+            <div class="footer-content container">
+                <div class="columns is-centered">
+    
+                    
+                    <div class="is-half-tablet is-one-third-desktop has-text-left">
+                      <div class="column is-full-mobile has-text-centered">
+                        <div class="footer__social-icons is-flex is-justify-content-center ">
+                            
+                            <a href="https://www.github.com/samrwitt" target="_blank">
+                                <img src="images/github.jpg" alt="GitHub" class="image is-24x24" />
+                            </a>
+                            <a href="https://t.me/Fumble_wit" target="_blank">
+                                <img src="images/telegram.png" alt="Telegram" class="image is-24x24" />
+                            </a>
+                            <a href="https://et.linkedin.com/in/samrawit-tesfay-20a404283" target="_blank">
+                                <img src="images/linkedin.png" alt="LinkedIn" class="image is-24x24" />
+                            </a>
+                            <a href="mailto:samrawitkta@gmail.com" target="_blank">
+                                <img src="images/Gmail_icon.png" alt="Gmail" class="image is-24x24" />
+                            </a>
+                        </div>
+                        </div>
+                                         </div>
+    
+                    <div class=" is-half-tablet is-one-third-desktop has-text-centered">
+                      <div class="column is-full-mobile has-text-centered">
+                        <p class="footer-content__copyright">&copy; 2023 Your Website. All rights reserved.</p>
+                    </div>
+                  </div>
+    
+                    <div class=" is-half-tablet is-one-third-desktop has-text-right">
+                      <div class="column is-full-mobile has-text-centered">
+                         <p class="footer-content__made-by">Made by Samrwit.K</p>
+                    </div>
+                    </div>
+                  
+    
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
