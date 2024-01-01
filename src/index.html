@@ -1,61 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Samrawit</title>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <a href="./index.html">
-          <img src="../images/logo.jpg" alt="My Logo" />
-        </a>
-      </div>
-      <a href="index.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Services.html">Services</a>
-      <a href="Contact.html">Contact</a>
-    </nav>
-    <br />
-    <main id="home">
-      <img src="../images/AvatarMaker.png" alt="Description of the image" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="script.js"></script>
+</head>
 
-      <div>
-        <p>
-          Welcome to my portfolio! <br />
+<body style="overflow: hidden;" class="body is-fullheight is-flex is-flex-direction-column">
+  
+    <nav  class="navbar is-spaced" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img src="images/logo.jpg" alt="My Logo">
+          </a>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarLinks">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarLinks" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="index.html">Home</a>
+            <a class="navbar-item" href="About.html">About</a>
+            <a class="navbar-item" href="Projects.html">Projects</a>
+            <a class="navbar-item" href="Services.html">Services</a>
+            <a class="navbar-item" href="Contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
 
-          I am a graphic designer and programmer with a passion for creating
-          beautiful and functional designs. I am a third-year university student
-          , where I am studying Software engineering. I have a strong
-          understanding of design principles and am proficient in a variety of
-          design software, including Adobe Photoshop, Illustrator, and InDesign.
-          I am also a skilled programmer, with experience in HTML, CSS, and
-          JavaScript.
-        </p>
-        <a href="./projects.html" class="button"> Let's tour </a>
-      </div>
-    </main>
-    <hr />
-    <footer>
-      <div class="social-icons">
-        <a href="https://www.github.com/samrwitt" target="_blank"
-          ><img src="../images/github.jpg" alt="GitHub"
-        /></a>
-        <a href="https://t.me/Fumble_wit" target="_blank"
-          ><img src="../images/telegram.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://et.linkedin.com/in/samrawit-tesfay-20a404283"
-          target="_blank"
-          ><img src="../images/linkedin.png" alt="linkedin"
-        /></a>
-        <a href="mailto:samrawitkta@gmail.com" target="_blank"
-          ><img src="../images/Gmail_icon.png" alt="gmail"
-        /></a>
-      </div>
-      <p>Made by Samrwit.K</p>
-      <p>&copy; 2023 Your Website. All rights reserved.</p>
+      <main id="home" class="is-fullheight is-flex is-flex-direction-column is-align-items-center is-justify-content-space-between is-10/10" >
+        <div class="hero-section columns is-desktop is-vcentered">
+          <div class="column is-half-desktop">
+            <div class="hero-section__image">
+              <figure class="image is-flex is-justify-content-center">
+                <img class="is-rounded " src="images/AvatarMaker.png" alt="Description of the image" style=width:300px;height:auto;  />
+              </figure>
+            </div>
+          </div>
+          <div class="column is-flex is-justify-content-center">
+            <div class="hero-section__text">
+          <p class="hero-section__paragraph">
+                <h6 class="hero-section__title title is-6">Welcome To My Portfolio!</h6>
+                I am a graphic designer and programmer with a passion for creating
+                beautiful and functional designs. I am a third-year university
+                student, where I am studying Software engineering. I have a strong
+                understanding of design principles and am proficient in a variety of
+                design software, including Adobe Photoshop, Illustrator, and
+                InDesign. I am also a skilled programmer, with experience in HTML,
+                CSS, and JavaScript.
+          </p>
+              <a href="projects.html" class="button is-primary hero-section__button">Let's Tour</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      <hr>
+      <footer class="footer mt-3 pt-3 pb-3 mb-3">
+        <div class="content has-text-centered">
+            <div class="footer-content container">
+                <div class="columns is-centered">
+    
+                  
+                    <div class="is-half-tablet is-one-third-desktop has-text-left">
+                      <div class="column is-full-mobile has-text-centered">
+                        <div class="footer__social-icons is-flex is-justify-content-center ">
+                           
+                            <a href="https://www.github.com/samrwitt" target="_blank">
+                                <img src="images/github.jpg" alt="GitHub" class="image is-24x24" />
+                            </a>
+                            <a href="https://t.me/Fumble_wit" target="_blank">
+                                <img src="images/telegram.png" alt="Telegram" class="image is-24x24" />
+                            </a>
+                            <a href="https://et.linkedin.com/in/samrawit-tesfay-20a404283" target="_blank">
+                                <img src="images/linkedin.png" alt="LinkedIn" class="image is-24x24" />
+                            </a>
+                            <a href="mailto:samrawitkta@gmail.com" target="_blank">
+                                <img src="images/Gmail_icon.png" alt="Gmail" class="image is-24x24" />
+                            </a>
+                        </div>
+                        </div>
+                                         </div>
+    
+                    <div class=" is-half-tablet is-one-third-desktop has-text-centered">
+                      <div class="column is-full-mobile has-text-centered">
+                        <p class="footer-content__copyright">&copy; 2023 Your Website. All rights reserved.</p>
+                    </div>
+                  </div>
+    
+                    <div class=" is-half-tablet is-one-third-desktop has-text-right">
+                      <div class="column is-full-mobile has-text-centered">
+                         <p class="footer-content__made-by">Made by Samrwit.K</p>
+                    </div>
+                    </div>
+                  
+    
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+    <hr>
+    
+</body>
+
 </html>
